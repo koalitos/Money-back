@@ -28,9 +28,10 @@ app.use(express.json())
 
 // api rotas modular
 const contasRoutes = require('./routes/contasRoutes')
+const loginRoutes = require('./routes/loginRoutes')
 
 app.use('/conta', contasRoutes)
-
+app.use('/login', loginRoutes)
 // rota inicial
 app.get('/', (req, res) => {
 
